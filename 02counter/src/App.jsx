@@ -9,6 +9,19 @@ function App() {
 
   let [counter, setCounter] = useState(0);
 
+
+  /*
+
+  Interview question to directly increase the value by 4 
+
+  const addValue = () => {
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1 )
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    
+  }
+  */
   const increaseValue = () => {
     if(counter != 20){
       setCounter(++counter);
