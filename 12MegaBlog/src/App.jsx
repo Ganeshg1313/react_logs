@@ -30,7 +30,6 @@ function App() {
       <div className='w-full bg-slate-50 block'>
         <Header />
         <main>
-          TODO : 
           <Outlet />
         </main>
         <Footer />
