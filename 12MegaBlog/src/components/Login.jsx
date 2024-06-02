@@ -17,10 +17,10 @@ function Login() {
         try {
             const session = await authService.login(data)
             if (session) {
-                console.log("Inside session")
                 const userData = await authService.getCurrentUser()
-                console.log("User data: ", userData)
-                if(userData) dispatch(authLogin(userData));
+                if(userData){
+                    dispatch(authLogin({ userData: userData }));
+                } 
                 navigate("/")
             }
         } catch (error) {
